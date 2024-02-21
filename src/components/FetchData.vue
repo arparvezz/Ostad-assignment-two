@@ -18,8 +18,10 @@ function getData() {
             <button @click="getData()" class="px-2 py-1 rounded outline-none border-none bg-purple-200 hover:bg-purple-300 cursor-pointer">Get Quote</button>
             <div class="my-1 p-2 bg-slate-200 rounded">
                 <div class="output_data">
-                    <p>Quote: {{ outputObject.quote }}</p>
+                    
+                    <span class="text-blue-500">ID: {{ outputObject.id }}</span><p>Quote: {{ outputObject.quote }}</p>
                     - <span> {{ outputObject.character }}</span>
+                    <p>Anime: {{ outputObject.anime }}</p>
                     <!-- <p>Quote: {{ outputObject.value.quote || '' }}</p> -->
                 </div>
             </div>
